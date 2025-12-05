@@ -22,9 +22,9 @@
 ---
 
 ## 🛠️ 如何使用
-```bash
- # 1. 下载脚本到当前目录
 
+ # 1. 下载脚本到当前目录
+```bash
 wget https://raw.githubusercontent.com/oceansuc/linux-server-maintenance/main/clean_disk_optimized.sh
 ```
 # 2. 赋予执行权限
