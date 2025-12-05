@@ -30,9 +30,26 @@
 ```bash
 git clone [https://github.com/oceansuc/linux-server-maintenance.git](https://github.com/oceansuc/linux-server-maintenance.git)
 cd linux-server-maintenance
-2. 赋予权限并运行注意： 脚本必须以 root 权限运行，因为它需要访问系统缓存和日志目录。Bash# 赋予执行权限
+
+2. 赋予权限并运行
+注意： 脚本必须以 root 权限运行，因为它需要访问系统缓存和日志目录。
+# 赋予执行权限
 chmod +x clean_disk_optimized.sh
 
 # 运行脚本
 sudo ./clean_disk_optimized.sh
-3. 完成人工确认 (Step 8)脚本执行到最后时，会列出全盘最大的 15 个文件（以 MB 为单位）。这是最有可能释放大量空间的地方。请根据您的服务器情况，手动确认并删除这些列表中不需要的文件。🧼 清理步骤详情脚本执行以下 8 个主要步骤来释放空间：Step清理目标描述1软件包缓存清理 APT/YUM/DNF 的下载缓存和不再需要的依赖包。2Systemd 日志限制 journalctl 日志大小（保留最近 100M 或 1 天）。3旧系统日志删除 /var/log 下的归档日志（.gz, .1）并安全截断大型 .log 文件。4Web 服务器日志清理 Nginx/Apache 的旧访问日志和错误日志。5Docker 垃圾使用 docker system prune -af 清理所有未使用的 Docker 资源。6临时文件删除 /tmp (7天) 和 /var/tmp (30天) 下的旧文件和目录。7用户应用缓存清理 Root 用户的缓存和 /home 目录下的用户缩略图缓存。8人工确认扫描并列出最大的 15 个文件供用户手动删除。📄 许可证本项目采用 MIT 许可证 开源。详情请参见 LICENSE 文件。
+
+3. 完成人工确认 (Step 8)
+脚本执行到最后时，会列出全盘最大的 15 个文件（以 MB 为单位）。这是最有可能释放大量空间的地方。
+
+请根据您的服务器情况，手动确认并删除这些列表中不需要的文件。
+
+Step,清理目标,描述
+1,软件包缓存,清理 APT/YUM/DNF 的下载缓存和不再需要的依赖包。
+2,Systemd 日志,限制 journalctl 日志大小（保留最近 100M 或 1 天）。
+3,旧系统日志,"删除 /var/log 下的归档日志（.gz, .1）并安全截断大型 .log 文件。"
+4,Web 服务器日志,清理 Nginx/Apache 的旧访问日志和错误日志。
+5,Docker 垃圾,使用 docker system prune -af 清理所有未使用的 Docker 资源。
+6,临时文件,删除 /tmp (7天) 和 /var/tmp (30天) 下的旧文件和目录。
+7,用户应用缓存,清理 Root 用户的缓存和 /home 目录下的用户缩略图缓存。
+8,人工确认,扫描并列出最大的 15 个文件供用户手动删除。
