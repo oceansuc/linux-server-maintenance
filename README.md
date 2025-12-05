@@ -23,7 +23,7 @@
 
 ## 🛠️ 如何使用
 
-### 1. 克隆仓库
+ 1. 克隆仓库
 
 请使用以下命令克隆本项目到您的 Linux 服务器上：
 
@@ -35,18 +35,17 @@ cd linux-server-maintenance
 注意： 脚本必须以 root 权限运行，因为它需要访问系统缓存和日志目录。
 # 赋予执行权限
 
-```Bash
+
 chmod +x clean_disk_optimized.sh
 
 # 运行脚本
-```Bash
+
 sudo ./clean_disk_optimized.sh
 
 3. 完成人工确认 (Step 8)
 脚本执行到最后时，会列出全盘最大的 15 个文件（以 MB 为单位）。这是最有可能释放大量空间的地方。
 
 请根据您的服务器情况，手动确认并删除这些列表中不需要的文件。
-```Bash
 
 Step,清理目标,描述
 1,软件包缓存,清理 APT/YUM/DNF 的下载缓存和不再需要的依赖包。
