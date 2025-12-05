@@ -26,15 +26,15 @@
  # 1. 下载脚本到当前目录
 
 wget https://raw.githubusercontent.com/oceansuc/linux-server-maintenance/main/clean_disk_optimized.sh
-
+```
 # 2. 赋予执行权限
 
 chmod +x clean_disk_optimized.sh
-
+```
 # 3. 以 root 权限运行
 
 sudo ./clean_disk_optimized.sh
-
+```
 # 4. 完成人工确认 (Step 8)
 脚本执行到最后时，会列出全盘最大的 15 个文件（以 MB 为单位）。这是最有可能释放大量空间的地方。
 
