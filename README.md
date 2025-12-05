@@ -22,17 +22,17 @@
 ---
 
 ## 🛠️ 如何使用
-
- # 1. 下载脚本到当前目录
 ```bash
+ # 1. 下载脚本到当前目录
+
 wget https://raw.githubusercontent.com/oceansuc/linux-server-maintenance/main/clean_disk_optimized.sh
 
 # 2. 赋予执行权限
-```bash
+
 chmod +x clean_disk_optimized.sh
 
 # 3. 以 root 权限运行
-```bash
+
 sudo ./clean_disk_optimized.sh
 
 # 4. 完成人工确认 (Step 8)
