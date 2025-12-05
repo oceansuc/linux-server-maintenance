@@ -23,26 +23,16 @@
 
 ## 🛠️ 如何使用
 
- 1. 克隆仓库
+ # 1. 下载脚本到当前目录
+wget https://raw.githubusercontent.com/oceansuc/linux-server-maintenance/main/clean_disk_optimized.sh
 
-请使用以下命令克隆本项目到您的 Linux 服务器上：
-
-
-git clone [https://github.com/oceansuc/linux-server-maintenance.git](https://github.com/oceansuc/linux-server-maintenance.git)
-cd linux-server-maintenance
-```Bash
-2. 赋予权限并运行
-注意： 脚本必须以 root 权限运行，因为它需要访问系统缓存和日志目录。
-# 赋予执行权限
-
-
+# 2. 赋予执行权限
 chmod +x clean_disk_optimized.sh
 
-# 运行脚本
-
+# 3. 以 root 权限运行
 sudo ./clean_disk_optimized.sh
 
-3. 完成人工确认 (Step 8)
+# 4. 完成人工确认 (Step 8)
 脚本执行到最后时，会列出全盘最大的 15 个文件（以 MB 为单位）。这是最有可能释放大量空间的地方。
 
 请根据您的服务器情况，手动确认并删除这些列表中不需要的文件。
