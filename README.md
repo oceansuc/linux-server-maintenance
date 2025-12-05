@@ -27,10 +27,10 @@
 
 请使用以下命令克隆本项目到您的 Linux 服务器上：
 
-```Bash
+
 git clone [https://github.com/oceansuc/linux-server-maintenance.git](https://github.com/oceansuc/linux-server-maintenance.git)
 cd linux-server-maintenance
-
+```Bash
 2. 赋予权限并运行
 注意： 脚本必须以 root 权限运行，因为它需要访问系统缓存和日志目录。
 # 赋予执行权限
