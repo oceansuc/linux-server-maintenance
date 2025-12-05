@@ -27,7 +27,7 @@
 
 请使用以下命令克隆本项目到您的 Linux 服务器上：
 
-```bash
+
 git clone [https://github.com/oceansuc/linux-server-maintenance.git](https://github.com/oceansuc/linux-server-maintenance.git)
 cd linux-server-maintenance
 
